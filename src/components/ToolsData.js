@@ -72,7 +72,7 @@ export const projects = [
         'id': '2',
         projectsTools: 'React, css, html',
         realProjects: Workjeje,
-        gotoProjects:'https://rent-it-real-estate-platform.vercel.app/'
+        gotoProjects:'https://work-jeje.vercel.app/'
     },
     {
         'id': '3',
@@ -84,7 +84,7 @@ export const projects = [
         'id': '4',
         projectsTools: 'React, css, html',
         realProjects: Workjeje,
-        gotoProjects:'https://rent-it-real-estate-platform.vercel.app/'
+        gotoProjects:'https://work-jeje.vercel.app/'
     },
    
 ]
