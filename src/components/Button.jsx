@@ -1,24 +1,12 @@
 import React from 'react'
+import MyResume from '../asset/my-resume.pdf'
 
 const Button = (props) => {
-  const onButtonClick = () => {
-    // using Java Script method to get PDF file
-    fetch('file:///C:/Users/Hp/Desktop/Azeez%20Oyegoke%20Resume.pdf').then(response => {
-        response.blob().then(blob => {
-            // Creating new object of PDF file
-            const fileURL = window.URL.createObjectURL(blob);
-            // Setting various property values
-            let alink = document.createElement('a');
-            alink.href = fileURL;
-            alink.download = 'file:///C:/Users/Hp/Desktop/Azeez%20Oyegoke%20Resume.pdf';
-            alink.click();
-        })
-    })
-  }
+  
   return (
     <div className='div-button'>
-        <button>{props.first}</button>
-        <button onClick={onButtonClick} className='nav-contact'><a href="#footer">{props.second}</a></button>
+        <button className='nav-contact'><a href={MyResume} download={MyResume}>{props.first}</a></button>
+        <button className='nav-contact'><a href="#footer">{props.second}</a></button>
     </div>
   )
 }
