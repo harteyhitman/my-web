@@ -10,6 +10,7 @@ import tailwindcss from '../images/tailwindcss.png'
 import typescript from '../images/typescript.png'
 import Rentitpro from '../images/rentit project.png'
 import Workjeje from '../images/workjeje.png'
+import MusicDemo from '../asset/music-demo.png'
 
 
 export const ToolsData = [
@@ -77,8 +78,8 @@ export const projects = [
     {
         'id': '3',
         projectsTools: 'React, css, html',
-        realProjects: Rentitpro,
-        gotoProjects:'https://rent-it-real-estate-platform.vercel.app/'
+        realProjects: MusicDemo,
+        gotoProjects:'https://music-demo-app.vercel.app/'
     },
     {
         'id': '4',
