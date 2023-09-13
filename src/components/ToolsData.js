@@ -11,6 +11,7 @@ import typescript from '../images/typescript.png'
 import Rentitpro from '../images/rentit project.png'
 import Workjeje from '../images/workjeje.png'
 import MusicDemo from '../asset/music-demo.png'
+import Depression from '../images/depression.png'
 
 
 export const ToolsData = [
@@ -84,8 +85,8 @@ export const projects = [
     {
         'id': '4',
         projectsTools: 'React, css, html',
-        realProjects: Workjeje,
-        gotoProjects:'https://work-jeje.vercel.app/'
+        realProjects: Depression,
+        gotoProjects:'https://depression-pi.vercel.app/'
     },
    
 ]
