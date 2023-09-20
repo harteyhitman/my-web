@@ -606,7 +606,7 @@ button:hover {
     display: grid;
     gap: 5px;
     grid-auto-flow: column;
-    grid-auto-columns: 100%;
+    grid-auto-columns: 120%;
     overflow-x: auto;
     overscroll-behavior-inline: contain;
     scroll-snap-type: inline mandatory;
@@ -621,7 +621,7 @@ button:hover {
     border: 4px solid #777777;
   }
   .small-projects img{
-    width: 300px;
+    width: 250px;
     height: 200px;
    /* object-fit: cover; */
   }
