@@ -9,6 +9,7 @@ import Tools from "./components/Tools";
 import Projects from "./components/Projects";
 import CommunityContribution from "./components/CommunityContribution";
 import Gmail from "./components/Gmail";
+import SmallProjects from "./smallProjects/SmallProjects";
 const App = () => {
   const [loading, setLoading] = useState(false);
   useEffect(() => {
@@ -18,27 +19,25 @@ const App = () => {
     }, 2000);
   }, []);
   return (
-    
-      <div className="App">
-     {
-      loading ?(
+    <div className="App">
+      {loading ? (
         <div className="loader-container">
-        <div className="loader"></div>
+          <div className="loader"></div>
         </div>
-      ) :(
+      ) : (
         <>
-        <Navbar />
-        <Bigtext />
-        <DescText />
-        <ScrollableContainer />
-        <Tools />
-        <Projects />
-        <CommunityContribution />
-        <Gmail />
+          <Navbar />
+          <Bigtext />
+          <DescText />
+          <ScrollableContainer />
+          <Tools />
+          <Projects />
+          <SmallProjects />
+          <CommunityContribution />
+          <Gmail />
         </>
-      )
-     }
-      </div> 
+      )}
+    </div>
   );
 };
 

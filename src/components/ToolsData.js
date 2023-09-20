@@ -12,7 +12,12 @@ import Rentitpro from '../images/rentit project.png'
 import Workjeje from '../images/workjeje.png'
 import MusicDemo from '../asset/music-demo.png'
 import Depression from '../images/depression.png'
-
+import Calculator from '../images/calculator.png'
+import CountryFlags from '../images/Flags.png'
+import CountDown from '../images/count-down.png'
+import AppleStore from '../images/Apple store.png'
+import KepperApp from '../images/kepper-app.png'
+import GalleryPhotos from '../images/GalleryPhotos.png'
 
 export const ToolsData = [
 
@@ -88,5 +93,45 @@ export const projects = [
         realProjects: Depression,
         gotoProjects:'https://depression-pi.vercel.app/'
     },
-   
 ]
+
+
+export const smallProject = [
+    {
+        smallProjectLink: 'https://calculator-react-iota.vercel.app/',
+        id: '1',
+        smallProjectImg: Calculator,
+        smallProjectTitle: 'Simple Calculator'
+    },
+    {
+        smallProjectLink: 'https://country-flags-names.vercel.app/',
+        id: '2',
+        smallProjectImg: CountryFlags,
+        smallProjectTitle: 'Country Flags'
+    },
+    {
+        smallProjectLink: 'https://count-downapp.vercel.app/',
+        id: '3',
+        smallProjectImg: CountDown,
+        smallProjectTitle: 'Timer CountDown'
+    },
+    {
+        smallProjectLink: 'https://updatedapplestore.vercel.app/',
+        id: '4',
+        smallProjectImg: AppleStore,
+        smallProjectTitle: 'Apple Store'
+    },
+    {
+        smallProjectLink: 'https://kepper-app-ten.vercel.app/',
+        id: '5',
+        smallProjectImg: KepperApp,
+        smallProjectTitle: 'Kepper App'
+    },
+    {
+        smallProjectLink: 'https://gallery-photos-phi.vercel.app/',
+        id: '6',
+        smallProjectImg: GalleryPhotos,
+        smallProjectTitle: 'Gallery Photos'
+    },
+]
+
