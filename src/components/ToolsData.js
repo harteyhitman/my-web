@@ -46,11 +46,7 @@ export const ToolsData = [
         "imageKey": react,
         'text': 'ReactJS'
     },
-   {
-        'id': '6',
-        "imageKey": typescript,
-        'text': 'Typescript'
-    },
+
    {
         'id': '7',
         "imageKey": sass,
