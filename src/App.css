@@ -7,7 +7,8 @@ html{
   scroll-behavior: smooth;
 }
 body {
-  background: #002451;
+  /* background: #002451; */
+  background: linear-gradient(270deg, #903AFF 0%, #FE34B9 100%);
   color: white;
   margin: 0 50px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -159,7 +160,7 @@ button:hover {
   border-top: 2px solid #777777;
 }
 #visit-site{
-  background-color: #777777;
+  background-color: #150E28;;
   padding: 10px;
   border: none;
   outline: none;
@@ -167,7 +168,7 @@ button:hover {
   margin: 10px 0px;
 }
 #visit-site a{
-  color: white;
+  color: #D434FE;
   text-decoration: none;
   font-size: 16px;
   font-weight: bold;
@@ -236,7 +237,7 @@ button:hover {
         transform: rotate(360deg);
     }
 }
-.small-projs{
+#small-projs{
   display: grid;
   gap: 5px;
   margin-top: 30px;
@@ -248,13 +249,15 @@ button:hover {
   
 }
 .small-projects{
-  padding: 10px;
+  padding: 5px;
+  gap: 20px;
   grid-template-rows: min-content;
   scroll-snap-align: start;
-  /* background-color: #8415e4; */
+  background-color: #D434FE;
+  border: 4px solid #1B0D34;
 }
 .small-projects img{
-  width: 250px;
+  width: 240px;
   height: 200px;
  object-fit: cover;
 }
@@ -264,9 +267,10 @@ button:hover {
 }
 @media (max-width: 700px) {
   body {
-    background: #002451;
+    /* background: #002451; */
+    background: linear-gradient(270deg, #903AFF 0%, #FE34B9 100%);
     color: white;
-    /* margin: 0 50px; */
+    margin: 0 50px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
       Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
       sans-serif;
@@ -356,7 +360,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     cursor: pointer;
-    margin-right: 20px;
+    /* margin-right: 20px; */
     padding: 10px;
   }
   .line {
@@ -438,21 +442,24 @@ button:hover {
 }
 }
 @media (max-width: 500px) {
+
   body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    /* align-items: center; */
-    background: #002451;
+    background: linear-gradient(270deg, #903AFF 0%, #FE34B9 100%);
     color: white;
-    /* margin: 0 50px; */
+    margin: 0 50px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
       Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
       sans-serif;
+      /* width: 80%; */
   }
   .navbar {
     display: flex;
     justify-content: space-between;
+    gap: 100px;
+    padding: 0;
+    margin: 0;
   }
   .dev-tools {
     display: grid;
@@ -465,6 +472,7 @@ button:hover {
     align-items: center;
     width: 250px;
     height: 250px;
+    margin: 0 auto;
     cursor: pointer;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -478,6 +486,7 @@ button:hover {
   }
   #descs-text {
     width: 100%;
+    font-size: 14px;
     margin: 0 auto;
     text-align: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -498,6 +507,10 @@ button:hover {
     margin-top: 100px;
     text-align: center;
     font-size: 24px;
+   
+  }
+  .community h3{
+     color: #002451;
   }
   #footer {
     display: flex;
@@ -516,10 +529,10 @@ button:hover {
     align-items: center;
     padding: 10px 10px;
     border-radius: 20px;
-    background: #002451;
+    border-radius: 10px;
+background: linear-gradient(270deg, #1B0D34 0%, #1B0D34 56.42%, #FF26B9 99.99%, #1B0D34 100%);
     color: white;
-    border: 2px solid white;
-    background-color: #111111;
+    border: 2px solid #1B0D34;
     /* outline: none; */
   }
   .contact {
@@ -535,15 +548,22 @@ button:hover {
   }
   .navbar-menu {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
   }
   .hamburger {
     display: flex;
     flex-direction: column;
     cursor: pointer;
-    margin-right: 20px;
+    /* margin-right: 20px; */
     padding: 10px;
   }
+  .navbar h1 {
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    align-self: center;
+    letter-spacing: 2px;
+    /* padding-left: -100px; */
+}
   .line {
     width: 30px;
     height: 2px;
@@ -602,7 +622,7 @@ button:hover {
       }
   }
  
-  .small-projs{
+  #small-projs{
     display: grid;
     gap: 5px;
     grid-auto-flow: column;
@@ -617,8 +637,8 @@ button:hover {
     gap: 20px;
     grid-template-rows: min-content;
     scroll-snap-align: start;
-    background-color: #777777;
-    border: 4px solid #777777;
+    background-color: #D434FE;
+    border: 4px solid #1B0D34;
   }
   .small-projects img{
     width: 250px;

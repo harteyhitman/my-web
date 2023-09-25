@@ -3,7 +3,7 @@ import { smallProject } from "../components/ToolsData";
 
 const SProjects = () => {
   return (
-    <div className="small-projs">
+    <div id="small-projs">
       {smallProject.map((small) => (
         <div key={small.id} className="small-projects">
           <a href={small.smallProjectLink}>

@@ -7,7 +7,6 @@ import react from '../images/react.jpg'
 import sass from '../images/sass.png'
 import styledcomponents from '../images/styled components.png'
 import tailwindcss from '../images/tailwindcss.png'
-import typescript from '../images/typescript.png'
 import Rentitpro from '../images/rentit project.png'
 import Workjeje from '../images/workjeje.png'
 import MusicDemo from '../asset/music-demo.png'
@@ -67,25 +66,25 @@ export const ToolsData = [
 export const projects = [
     {
         'id': '1',
-        projectsTools: 'React, css, html',
+        projectsTools: 'Html, Css, ReactJS',
         realProjects: Rentitpro,
         gotoProjects:'https://rent-it-real-estate-platform.vercel.app/'
     },
     {
         'id': '2',
-        projectsTools: 'React, css, html',
+        projectsTools: 'Html, Css, ReactJS',
         realProjects: Workjeje,
         gotoProjects:'https://work-jeje.vercel.app/'
     },
     {
         'id': '3',
-        projectsTools: 'React, css, html',
+        projectsTools: 'Html, Css, ReactJS',
         realProjects: MusicDemo,
         gotoProjects:'https://music-demo-app.vercel.app/'
     },
     {
         'id': '4',
-        projectsTools: 'React, css, html',
+        projectsTools: 'Html, Css, ReactJS',
         realProjects: Depression,
         gotoProjects:'https://depression-pi.vercel.app/'
     },

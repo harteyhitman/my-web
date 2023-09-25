@@ -31,6 +31,7 @@ function HamburgerMenu() {
           <li><a href="#footer" onClick={handleCloseModal}>Contacts</a></li>
           <li><a href="#descs-text" onClick={handleCloseModal}>About</a></li>
           <li><a href="#real-projects"onClick={handleCloseModal}>Projects</a></li>
+          <li><a href="#small-projs"onClick={handleCloseModal}>Practices</a></li>
           </ul>
           </div>
         </div>
