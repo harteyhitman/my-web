@@ -454,6 +454,7 @@ button:hover {
       sans-serif;
       /* width: 80%; */
   }
+
   .navbar {
     display: flex;
     justify-content: space-between;
