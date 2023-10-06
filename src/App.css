@@ -31,7 +31,6 @@ button:hover {
   cursor: pointer;
 }
 .div-button button {
-  border: 2px solid #777777;
   border-radius: 10px;
   padding: 4px 12px;
   margin: 0 10px;
@@ -146,8 +145,8 @@ button:hover {
   "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 .projects-links {
-  border: 2px solid #777777;
-  border-radius: 10px;
+  border: 2px solid #1B0D34;
+    border-radius: 10px;
   padding: 10px 20px;
   background-color: #111111;
   color: white;
@@ -199,13 +198,18 @@ button:hover {
 }
 .contact button {
   outline: none;
-  border: 2px solid white;
-  background-color: #111111;
+  background: linear-gradient(270deg, #1B0D34 0%, #1B0D34 56.42%, #FF26B9 99.99%, #1B0D34 100%);
+   
+    border: 2px solid #1B0D34;
   padding: 10px 25px;
   font-weight: 600;
   margin-left: 20px;
   border-radius: 20px;
   color: white;
+}
+.nav-contact{
+  background: linear-gradient(270deg, #1B0D34 0%, #1B0D34 56.42%, #FF26B9 99.99%, #1B0D34 100%);
+  border: 2px solid #1B0D34;
 }
 .nav-contact a{
   text-decoration: none;
@@ -608,10 +612,12 @@ background: linear-gradient(270deg, #1B0D34 0%, #1B0D34 56.42%, #FF26B9 99.99%, 
     border: none;
     outline: none;
     border-radius: 5px;
-    background-color: #D434FE;
+    background: linear-gradient(270deg, #1B0D34 0%, #1B0D34 56.42%, #FF26B9 99.99%, #1B0D34 100%);
+   
+    border: 2px solid #1B0D34;
   }
   .modal-btn a{
-    color: #002451;
+    color: white;
     font-size: 20px;
     font-weight: 800;
   }

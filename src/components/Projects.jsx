@@ -3,6 +3,8 @@ import {projects} from './ToolsData'
 
 const Projects = () => {
 
+  
+
 
   return (
     <div className='projects-main-div'>
@@ -12,7 +14,7 @@ const Projects = () => {
       {project.projectsTools}  
          </p>
          <button id='visit-site'><a href={project.gotoProjects}>visit site</a></button>
-       <img src={project.realProjects}   id='real-projects' alt="" />
+       <a href={project.gotoProjects}><img src={project.realProjects}   id='real-projects' alt=""/></a>
         </div>
       ))}
     </div>
