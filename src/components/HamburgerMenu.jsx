@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import CancelBtn from '../images/cancelBtn.png'
+import MyResume from '../asset/my-resume.pdf'
 
 function HamburgerMenu() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -33,6 +34,7 @@ function HamburgerMenu() {
           <li><a href="#real-projects"onClick={handleCloseModal}>Projects</a></li>
           <li><a href="#small-projs"onClick={handleCloseModal}>Practices</a></li>
           </ul>
+            <button className='nav-contact modal-btn'><a href={MyResume} download={MyResume}>Resume</a></button>
           </div>
         </div>
       )}

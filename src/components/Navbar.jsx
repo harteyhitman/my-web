@@ -8,7 +8,8 @@ const Navbar = () => {
         <div className="button">
             <Button 
             first='Resume'
-            second='Contact' />
+            second='Contact' 
+            />
             <HamburgerMenu />
         </div>
        
