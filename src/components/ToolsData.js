@@ -17,6 +17,7 @@ import CountDown from '../images/count-down.png'
 import AppleStore from '../images/Apple store.png'
 import KepperApp from '../images/kepper-app.png'
 import GalleryPhotos from '../images/GalleryPhotos.png'
+import Getlinked from '../images/getlinked.png'
 
 export const ToolsData = [
 
@@ -87,6 +88,12 @@ export const projects = [
         projectsTools: 'Html, Css, ReactJS',
         realProjects: Depression,
         gotoProjects:'https://depression-pi.vercel.app/'
+    },
+    {
+        'id': '5',
+        projectsTools: 'Html, Css, ReactJS',
+        realProjects: Getlinked,
+        gotoProjects:'https://hacker-rank-1-0.vercel.app/'
     },
 ]
 
