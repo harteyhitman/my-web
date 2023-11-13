@@ -88,12 +88,6 @@ export const projects = [
         gotoProjects:'https://music-demo-app.vercel.app/'
     },
  
-    {
-        'id': '5',
-        projectsTools: 'Html, Css, ReactJS',
-        realProjects: Getlinked,
-        gotoProjects:'https://hacker-rank-1-0.vercel.app/'
-    },
 ]
 
 
@@ -116,12 +110,6 @@ export const smallProject = [
         id: '4',
         smallProjectImg: AppleStore,
         smallProjectTitle: 'Apple Store'
-    },
-    {
-        smallProjectLink: 'https://kepper-app-ten.vercel.app/',
-        id: '5',
-        smallProjectImg: KepperApp,
-        smallProjectTitle: 'Kepper App'
     },
     {
         smallProjectLink: 'https://gallery-photos-phi.vercel.app/',
