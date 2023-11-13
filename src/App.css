@@ -8,7 +8,7 @@ html{
 }
 body {
   /* background: #002451; */
-  background: linear-gradient(270deg, #903AFF 0%, #FE34B9 100%);
+  background: black;
   color: white;
   margin: 0 50px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -167,7 +167,7 @@ button:hover {
   margin: 10px 0px;
 }
 #visit-site a{
-  color: #D434FE;
+  color: #fff;
   text-decoration: none;
   font-size: 16px;
   font-weight: bold;
@@ -198,8 +198,7 @@ button:hover {
 }
 .contact button {
   outline: none;
-  background: linear-gradient(270deg, #1B0D34 0%, #1B0D34 56.42%, #FF26B9 99.99%, #1B0D34 100%);
-   
+  background: linear-gradient(270deg, #1B0D34 0%, #1B0D34 56.42%, #000 99.99%, #1B0D34 100%);   
     border: 2px solid #1B0D34;
   padding: 10px 25px;
   font-weight: 600;
@@ -208,7 +207,7 @@ button:hover {
   color: white;
 }
 .nav-contact{
-  background: linear-gradient(270deg, #1B0D34 0%, #1B0D34 56.42%, #FF26B9 99.99%, #1B0D34 100%);
+  background: linear-gradient(270deg, #1B0D34 0%, #1B0D34 56.42%, #000 99.99%, #1B0D34 100%);
   border: 2px solid #1B0D34;
 }
 .nav-contact a{
@@ -239,7 +238,7 @@ button:hover {
   gap: 20px;
   grid-template-rows: min-content;
   scroll-snap-align: start;
-  background-color: #D434FE;
+  background-color: #1B0D34;;
   border: 4px solid #1B0D34;
 }
 .small-projects img{
@@ -254,7 +253,7 @@ button:hover {
 @media (max-width: 700px) {
   body {
     /* background: #002451; */
-    background: linear-gradient(270deg, #903AFF 0%, #FE34B9 100%);
+    background: black;
     color: white;
     margin: 0 50px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -413,7 +412,7 @@ button:hover {
   body {
     display: flex;
     flex-direction: column;
-    background: linear-gradient(270deg, #903AFF 0%, #FE34B9 100%);
+    background: black;
     color: white;
     margin: 0 50px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -478,7 +477,7 @@ button:hover {
    
   }
   .community h3{
-     color: #002451;
+     color: #fff;
   }
   #footer {
     display: flex;
@@ -498,7 +497,7 @@ button:hover {
     padding: 10px 10px;
     border-radius: 20px;
     border-radius: 10px;
-background: linear-gradient(270deg, #1B0D34 0%, #1B0D34 56.42%, #FF26B9 99.99%, #1B0D34 100%);
+background: linear-gradient(270deg, #1B0D34 0%, #1B0D34 56.42%, #000 99.99%, #1B0D34 100%);
     color: white;
     border: 2px solid #1B0D34;
     /* outline: none; */
@@ -596,7 +595,7 @@ background: linear-gradient(270deg, #1B0D34 0%, #1B0D34 56.42%, #FF26B9 99.99%, 
     gap: 20px;
     grid-template-rows: min-content;
     scroll-snap-align: start;
-    background-color: #D434FE;
+    background-color: #1B0D34;;
     border: 4px solid #1B0D34;
   }
   .small-projects img{

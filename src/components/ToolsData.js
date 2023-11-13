@@ -2,7 +2,6 @@
 import css3 from '../images/css3.png'
 import javascript from '../images/javscript.png'
 import nextjs from '../images/nextjs.png'
-import nodejs from '../images/nodejs.png'
 import react from '../images/react.jpg'
 import sass from '../images/sass.png'
 import styledcomponents from '../images/styled components.png'
@@ -10,58 +9,63 @@ import tailwindcss from '../images/tailwindcss.png'
 import Rentitpro from '../images/rentit project.png'
 import Workjeje from '../images/workjeje.png'
 import MusicDemo from '../asset/music-demo.png'
-import Depression from '../images/depression.png'
-import Calculator from '../images/calculator.png'
 import CountryFlags from '../images/Flags.png'
 import CountDown from '../images/count-down.png'
 import AppleStore from '../images/Apple store.png'
 import KepperApp from '../images/kepper-app.png'
 import GalleryPhotos from '../images/GalleryPhotos.png'
 import Getlinked from '../images/getlinked.png'
+import Html5 from '../images/html5.png'
 
 export const ToolsData = [
+   {
+        'id': '5',
+        "imageKey": react,
+        'text': 'ReactJS'
+    }, 
+      {
+        'id': '3',
+        "imageKey": nextjs,
+        'text': 'NextJS'
+    },
+    {
+        'id': '2',
+        "imageKey": javascript,
+        'text': 'Javascript'
+    },
+   {
+        'id': '7',
+        "imageKey": sass,
+        'text': 'Sass'
+    },
 
    {
         'id': '1',
         "imageKey": css3,
         'text': 'Css3'
     },
-   {
-        'id': '2',
-        "imageKey": javascript,
-        'text': 'Javascript'
-    },
-   {
-        'id': '3',
-        "imageKey": nextjs,
-        'text': 'NextJS'
-    },
-   {
-        'id': '4',
-        "imageKey": nodejs,
-        'text': 'NodeJS'
-    },
-   {
-        'id': '5',
-        "imageKey": react,
-        'text': 'ReactJS'
-    },
-
-   {
-        'id': '7',
-        "imageKey": sass,
-        'text': 'Sass'
-    },
+  
    {
         'id': '8',
         "imageKey": styledcomponents,
         'text': 'Styled Components'
     },
-   {
+ 
+ {
         'id': '10',
         "imageKey": tailwindcss,
         'text': 'Tailwind Css'
     },
+    {
+        'id': '11',
+        "imageKey": Html5,
+        'text': 'Html5'
+
+    }
+
+
+
+  
 ]
 
 export const projects = [
@@ -83,12 +87,7 @@ export const projects = [
         realProjects: MusicDemo,
         gotoProjects:'https://music-demo-app.vercel.app/'
     },
-    {
-        'id': '4',
-        projectsTools: 'Html, Css, ReactJS',
-        realProjects: Depression,
-        gotoProjects:'https://depression-pi.vercel.app/'
-    },
+ 
     {
         'id': '5',
         projectsTools: 'Html, Css, ReactJS',
@@ -99,12 +98,7 @@ export const projects = [
 
 
 export const smallProject = [
-    {
-        smallProjectLink: 'https://calculator-react-iota.vercel.app/',
-        id: '1',
-        smallProjectImg: Calculator,
-        smallProjectTitle: 'Simple Calculator'
-    },
+
     {
         smallProjectLink: 'https://country-flags-names.vercel.app/',
         id: '2',
