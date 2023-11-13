@@ -190,6 +190,8 @@ button:hover {
 #footer {
   display: flex;
   justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   margin: 30px;
 }
 .contact {
