@@ -196,7 +196,6 @@ button:hover {
 }
 .contact {
   display: flex;
-  margin-left: 44px;
 }
 .contact button {
   outline: none;
