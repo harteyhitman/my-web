@@ -12,9 +12,7 @@ import MusicDemo from '../asset/music-demo.png'
 import CountryFlags from '../images/Flags.png'
 import CountDown from '../images/count-down.png'
 import AppleStore from '../images/Apple store.png'
-import KepperApp from '../images/kepper-app.png'
 import GalleryPhotos from '../images/GalleryPhotos.png'
-import Getlinked from '../images/getlinked.png'
 import Html5 from '../images/html5.png'
 
 export const ToolsData = [
