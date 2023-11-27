@@ -1,0 +1,768 @@
+Delivered-To: oyegoke.a18@gmail.com
+Received: by 2002:a05:6358:f981:b0:13a:d187:9115 with SMTP id kw1csp3486724rwb;
+        Wed, 20 Sep 2023 10:56:41 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IGuURaG5wzbC4cB3izMUCpIm68dYhHtCrHBel3P5VpgWYRSntI96+mlA/5OHat2aCp8WpW3
+X-Received: by 2002:a67:ec06:0:b0:452:81ed:2efe with SMTP id d6-20020a67ec06000000b0045281ed2efemr3187595vso.11.1695232600998;
+        Wed, 20 Sep 2023 10:56:40 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1695232600; cv=none;
+        d=google.com; s=arc-20160816;
+        b=GUn/ruVtisG7hpsVvuYHpEXpjnHI+0VXBH/Bt237SqZF+/4NTRXOd9E8MQLscgXdvF
+         Fo7ed7rpDIPlMRAbhrSEVA2YHtqeNvvT9PDdgh7NL3BpfM410xpATTZhvrmfgOC6f9Jx
+         1ky+NRnQpsE/ZWcRLszVX4+XW0WcFjjbO4PWIWCDgJh1xXXMGaYB8jjauODhOgf+MDSh
+         SgumM/FhQVlB26tQQQO2q1Yefk/XFMPmyQtX112OvHUk7wKmpk5qFHmzn0e5aXq6Bkqk
+         cmCl+CDMWdc2W+BSoRffR2KY6jjiUcfcMf7LRaSP5IIh3Uye0fNX6TetFnsYxIRK5Tin
+         3cWg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:message-id:to:from:subject:mime-version
+         :date:sender:dkim-signature:dkim-signature;
+        bh=i7ZHjAxe5xZPujTCwZ6JtkJNEXT4JCeLuH13Vbk29WI=;
+        fh=+aBhWb1d3f2Kch6Gp0+V4s2lI8NZP3APkxijQMX6aPk=;
+        b=VM3kfzWUFAuR1Zwa0KnU1rlOTLQ6cpm3NDTFFDupvObraS7lsKEXGqkfJk3EwdZD6c
+         FvrkEfnID+7yfQrv3DJ5prauWRcSUFd4GbzyyjGFCEvxhIM4MUGFRJnaDpjzDYqP6Y+w
+         GPQA08FaZbaxhJ/ULlTcO+bqkHaalou4DNCg3LtWT+85C93BkxylmCS9En2T4oNifVB2
+         ixsa6LMF7V5vG1vCPDJneIv0QijL74INMix2+h/wamnUxsLjTVa6GaJwbjy7zQR3bp4S
+         ppZjqpl2Y3lunUCLjjIP067rUbo0vNMpEyXyfJj9ke8NygqqIyyPGhl1cPnMu8ur1J1j
+         fpww==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@libertypayng.com header.s=mailo header.b=FwJFF5eq;
+       dkim=pass header.i=@mailgun.org header.s=mg header.b=jnUUAscc;
+       spf=pass (google.com: domain of bounce+4bf839.86b064-oyegoke.a18=gmail.com@libertypayng.com designates 143.55.232.2 as permitted sender) smtp.mailfrom="bounce+4bf839.86b064-oyegoke.a18=gmail.com@libertypayng.com"
+Return-Path: <bounce+4bf839.86b064-oyegoke.a18=gmail.com@libertypayng.com>
+Received: from pc232-2.mailgun.net (pc232-2.mailgun.net. [143.55.232.2])
+        by mx.google.com with UTF8SMTPS id v16-20020a05620a0a9000b0077075391d6dsi9144636qkg.156.2023.09.20.10.56.40
+        for <oyegoke.a18@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Wed, 20 Sep 2023 10:56:40 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounce+4bf839.86b064-oyegoke.a18=gmail.com@libertypayng.com designates 143.55.232.2 as permitted sender) client-ip=143.55.232.2;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@libertypayng.com header.s=mailo header.b=FwJFF5eq;
+       dkim=pass header.i=@mailgun.org header.s=mg header.b=jnUUAscc;
+       spf=pass (google.com: domain of bounce+4bf839.86b064-oyegoke.a18=gmail.com@libertypayng.com designates 143.55.232.2 as permitted sender) smtp.mailfrom="bounce+4bf839.86b064-oyegoke.a18=gmail.com@libertypayng.com"
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=libertypayng.com;
+ q=dns/txt; s=mailo; t=1695232600; x=1695239800; h=Content-Type:
+ Content-Transfer-Encoding: Message-Id: To: To: From: From: Subject: Subject:
+ Mime-Version: Date: Sender: Sender: X-Feedback-Id;
+ bh=i7ZHjAxe5xZPujTCwZ6JtkJNEXT4JCeLuH13Vbk29WI=;
+ b=FwJFF5eqIf7s8SD6z5zCf+ij0UL+wwB7SDxTvV7xWmkdBawgavqR/pCP29LsJemnfN9JGkOAbsLgGAZ9hEFbStTI6jG1kag4cz0COovbwiLlKENPZvkz3uyr5nUYiskHPm47495tL4cO+Z9qBxNLTVljONJ7YuRmWICMI1LRUfI=
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mailgun.org;
+ q=dns/txt; s=mg; t=1695232600; x=1695239800; h=Content-Type:
+ Content-Transfer-Encoding: Message-Id: To: To: From: From: Subject: Subject:
+ Mime-Version: Date: Sender: Sender: X-Feedback-Id;
+ bh=i7ZHjAxe5xZPujTCwZ6JtkJNEXT4JCeLuH13Vbk29WI=;
+ b=jnUUAscc4zZF04KqsgrfPXBDhOWWpxPbFRbr9Yr81+fMcCzbuG50VG2gM3ydLMl2J5/TDC2hfMZ0fBOf2HHns/3sPw+l9/D4oamFz8VJ1gCKvAXlwRTJ+Wv6j7B91yvQtjpy9HcoG1yVy+YOhFsvig/d3QV7YnH6cpfpkQrvgLk=
+X-Feedback-Id: postmaster@libertypayng.com::6319bd2a209252f57654460f:mailgun
+X-Mailgun-Sending-Ip: 143.55.232.2
+X-Mailgun-Sid: WyIxY2Q1OSIsIm95ZWdva2UuYTE4QGdtYWlsLmNvbSIsIjg2YjA2NCJd
+Received: from <unknown> (<unknown> []) by cf2001211956 with HTTP id
+ 650b3258a86ea2aaec4bfa6f; Wed, 20 Sep 2023 17:56:40 GMT
+Sender: libertypay=libertyng.com@libertypayng.com
+Date: Wed, 20 Sep 2023 17:56:40 +0000
+Mime-Version: 1.0
+Subject: Congratulations on Registering for the Pre-Hackathon Coding Challenge!
+From: Get Linked <libertypay@libertyng.com>
+To: oyegoke.a18@gmail.com
+Message-Id: <20230920175640.2d05e7d68a95594a@libertypayng.com>
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="utf-8"
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html
+  xmlns=3D"http://www.w3.org/1999/xhtml"
+  xmlns:v=3D"urn:schemas-microsoft-com:vml"
+  xmlns:o=3D"urn:schemas-microsoft-com:office:office"
+>
+  <head>
+    <!--[if gte mso 9]>
+      <xml>
+        <o:OfficeDocumentSettings>
+          <o:AllowPNG />
+          <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+      </xml>
+    <![endif]-->
+    <meta http-equiv=3D"Content-type" content=3D"text/html; charset=3Dutf-8=
+" />
+    <meta
+      name=3D"viewport"
+      content=3D"width=3Ddevice-width, initial-scale=3D1, maximum-scale=3D1=
+"
+    />
+    <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge" />
+    <meta name=3D"format-detection" content=3D"date=3Dno" />
+    <meta name=3D"format-detection" content=3D"address=3Dno" />
+    <meta name=3D"format-detection" content=3D"telephone=3Dno" />
+    <meta name=3D"x-apple-disable-message-reformatting" />
+    <!--[if !mso]><!-->
+    <link
+      href=3D"https://fonts.googleapis.com/css?family=3DMuli:400,400i,700,7=
+00i"
+      rel=3D"stylesheet"
+    />
+    <link rel=3D"preconnect" href=3D"https://fonts.googleapis.com" />
+    <link rel=3D"preconnect" href=3D"https://fonts.gstatic.com" crossorigin=
+ />
+    <link
+      href=3D"https://fonts.googleapis.com/css2?family=3DNunito&display=3Ds=
+wap"
+      rel=3D"stylesheet"
+    />
+    <link href=3D"http://fonts.cdnfonts.com/css/clash-display" rel=3D"style=
+sheet" />
+    <link href=3D"http://fonts.cdnfonts.com/css/montserrat" rel=3D"styleshe=
+et" />
+    <link href=3D"http://fonts.cdnfonts.com/css/raleway-5" rel=3D"styleshee=
+t" />
+
+    <!--<![endif]-->
+    <title>|Liberty Email Template|</title>
+    <!--[if gte mso 9]>
+      <style type=3D"text/css" media=3D"all">
+        sup {
+          font-size: 100% !important;
+        }
+      </style>
+    <![endif]-->
+
+    <style type=3D"text/css" media=3D"screen">
+      /* Linked Styles */
+      body {
+        padding: 0 !important;
+        margin: 0 !important;
+        display: block !important;
+        min-width: 100% !important;
+        width: 100% !important;
+        background: #000000;
+        -webkit-text-size-adjust: none;
+      }
+
+      a {
+        color: #66c7ff;
+        text-decoration: none;
+      }
+
+      p {
+        padding: 0 !important;
+        margin: 0 !important;
+      }
+
+      img {
+        -ms-interpolation-mode: bicubic;
+        /* Allow smoother rendering of resized image in Internet Explorer *=
+/
+      }
+
+      .mcnPreviewText {
+        display: none !important;
+      }
+
+      .cke_editable,
+      .cke_editable a,
+      .cke_editable span,
+      .cke_editable a span {
+        color: #000001 !important;
+      }
+
+      /* Mobile styles */
+      @media only screen and (max-device-width: 480px),
+        only screen and (max-width: 480px) {
+        .mobile-shell {
+          width: 100% !important;
+          min-width: 100% !important;
+        }
+
+        .text-header,
+        .m-center {
+          text-align: center !important;
+        }
+
+        .center {
+          margin: 0 auto !important;
+        }
+
+        .container {
+          padding: 20px 10px !important;
+        }
+
+        .td {
+          width: 100% !important;
+          min-width: 100% !important;
+        }
+
+        .m-br-15 {
+          height: 15px !important;
+        }
+
+        .p30-15 {
+          padding: 30px 15px !important;
+        }
+
+        .m-block {
+          display: block !important;
+        }
+
+        .fluid-img img {
+          width: 100% !important;
+          max-width: 100% !important;
+          height: auto !important;
+        }
+
+        .column,
+        .column-top,
+        .column-empty,
+        .column-empty2,
+        .column-dir-top {
+          float: left !important;
+          width: 100% !important;
+          display: block !important;
+        }
+
+        .column-empty {
+          padding-bottom: 10px !important;
+        }
+
+        .column-empty2 {
+          padding-bottom: 30px !important;
+        }
+
+        .content-spacing {
+          width: 15px !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body
+    class=3D"body"
+    style=3D"
+      padding: 0 !important;
+      margin: 0 !important;
+      display: block !important;
+      min-width: 100% !important;
+      width: 100% !important;
+      -webkit-text-size-adjust: none;
+    "
+  >
+    <!--|IF:MC_PREVIEW_TEXT|-->
+    <!--[if !gte mso 9]><!-->
+    <!--<![endif]-->
+    <!--|END:IF|-->
+    <table
+      width=3D"100%"
+      border=3D"0"
+      cellspacing=3D"0"
+      cellpadding=3D"0"
+      bgcolor=3D"#E0F2FE"
+    >
+      <tr>
+        <td align=3D"center" valign=3D"top">
+          <table
+            width=3D"615"
+            border=3D"0"
+            cellspacing=3D"0"
+            cellpadding=3D"0"
+            class=3D"mobile-shell"
+            style=3D"padding: 0px 0px; background: #ffffff80"
+          >
+            <tr>
+              <td
+                class=3D"td container"
+                style=3D"
+                  width: 615px;
+                  min-width: 615px;
+                  font-size: 0pt;
+                  line-height: 0pt;
+                  margin: 0;
+                  font-weight: normal;
+                  padding: 5px 0px;
+                "
+              >
+                <!-- HEADER -->
+                <div mc:repeatable=3D"Select" mc:variant=3D"Intro">
+                  <table
+                    width=3D"100%"
+                    border=3D"0"
+                    cellspacing=3D"0"
+                    cellpadding=3D"0"
+                  >
+                    <tr>
+                      <td style=3D"padding-bottom: 10px">
+                        <table
+                          width=3D"100%"
+                          border=3D"0"
+                          cellspacing=3D"0"
+                          cellpadding=3D"0"
+                        >
+                          <tr>
+                            <td class=3D"tbrr p30-15">
+                              <img
+                                src=3D"https://res.cloudinary.com/eddiewurl=
+d/image/upload/v1695042768/header_rpw4fe.png"
+                                width=3D"615"
+                                height=3D"131"
+                              />
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <!-- END HEADER -->
+
+                <!-- Intro -->
+                <div
+                  mc:repeatable=3D"Select"
+                  mc:variant=3D"Intro"
+                  style=3D"text-align: center; z-index: 999"
+                >
+                  <table
+                    width=3D"100%"
+                    border=3D"0"
+                    cellspacing=3D"0"
+                    cellpadding=3D"0"
+                    style=3D"margin-top: -10px; position: relative; z-index=
+: 999"
+                  >
+                    <tr>
+                      <td style=3D"padding-bottom: 10px">
+                        <table
+                          width=3D"90%"
+                          border=3D"0"
+                          cellspacing=3D"0"
+                          cellpadding=3D"0"
+                          style=3D"margin-left: 40px"
+                        >
+                          <tr>
+                            <td
+                              class=3D"tbrr p30-15"
+                              style=3D"
+                                padding: 30px 30px 20px 30px;
+                                border-radius: 0px 0px 0px 0px;
+                                margin-top: -20px;
+                              "
+                              bgcolor=3D"#ffffff"
+                            >
+                              <table
+                                width=3D"100%"
+                                border=3D"0"
+                                cellspacing=3D"0"
+                                cellpadding=3D"0"
+                              >
+                                <tr>
+                                  <td
+                                    class=3D"text-left pb25"
+                                    style=3D"
+                                      color: #272727;
+                                      font-family: 'Nunito', Arial, sans-se=
+rif;
+                                      font-size: 16px;
+                                      line-height: 30px;
+                                      text-align: left;
+                                      padding-bottom: 5px;
+                                    "
+                                  >
+                                    <div mc:edit=3D"text_3">
+                                      <span
+                                        style=3D"
+                                          color: #073d9f;
+                                          font-family: Raleway;
+                                          font-weight: 700;
+                                        "
+                                      >
+                                        <!-- Pre-hackathon email -->
+                                      </span>
+                                      <br />
+                                      <span
+                                        class=3D"m-hide"
+                                        style=3D"
+                                          font-size: 13px;
+                                          color: #073d9f;
+                                          font-family: Raleway;
+                                          font-weight: 700;
+                                        "
+                                      >
+                                        Subject: Congratulations on Registe=
+ring
+                                        for the Pre-Hackathon Coding Challe=
+nge!
+                                      </span>
+                                      <br /><br />
+                                      <span
+                                        class=3D"m-hide"
+                                        style=3D"
+                                          font-size: 13px;
+                                          color: #073d9f;
+                                          font-family: Raleway;
+                                          font-weight: 700;
+                                        "
+                                      >
+                                        Dear Azeez Oyegoke,
+                                      </span>
+                                      <br />
+                                      <span
+                                        class=3D"m-hide"
+                                        style=3D"
+                                          font-size: 14px;
+                                          color: #073d9f;
+                                          font-family: Raleway;
+                                          font-weight: 500;
+                                        "
+                                      >
+                                        I hope this email finds you well an=
+d
+                                        excited for the upcoming coding
+                                        challenge! =F0=9F=9A=80
+
+                                        <br />
+                                        <br />
+
+                                        <span
+                                          class=3D"m-hide"
+                                          style=3D"
+                                            font-size: 14px;
+                                            color: #073d9f;
+                                            font-family: Raleway;
+                                            font-weight: 500;
+                                          "
+                                        >
+                                          I wanted to take a moment to say =
+a big
+                                          congratulations to you for regist=
+ering
+                                          as a pre-hackathon
+                                        </span>
+                                        participant in the coding challenge=
+=2E
+                                        Your enthusiasm for coding and
+                                        technology is truly commendable. <b=
+r />
+                                        <br />
+                                        Your mission, should you choose to
+                                        accept it, is to design a fantastic
+                                        project using this Figma link:
+                                        <span
+                                          ><a
+                                            href=3D"https://www.figma.com/f=
+ile/5WXTnOu1Yy7vjCDCGKSnib/Getlinked?type=3Ddesign&node-id=3D0-1&mode=3Ddes=
+ign&t=3DYfB0JBrgpquQFDwm-0"
+                                            >Figma Project Link.</a
+                                          ></span
+                                        >
+                                        <br />
+                                        <br />
+                                        Get creative and let your imaginati=
+on
+                                        run wild!
+                                        <br />
+                                        <br />
+                                        Additionally, you'll get to work wi=
+th a
+                                        real-world API. You can access it
+                                        through this link:
+                                        <a
+                                          href=3D"https://documenter.getpos=
+tman.com/view/13489492/2s9YC5zYA5"
+                                          >Backend Api.</a
+                                        >
+                                        <br />
+                                        <br />It's an exciting opportunity =
+to
+                                        see how coding can be used to inter=
+act
+                                        with the digital world.
+                                        <br />
+                                        <br />
+                                        When your masterpiece is ready, mak=
+e
+                                        sure to submit it using this form:
+                                        <span
+                                          ><a
+                                            href=3D"https://forms.gle/tKo5C=
+qRjdzHYpfHu7"
+                                            >Submission Form.</a
+                                          ></span
+                                        >
+                                        <br />
+                                        <br />Don't forget, the submission
+                                        deadline is 23rd Saturday September=
+ 2023
+                                        by 11:59 pm WAT (West Africa Time).
+                                        <br />
+                                        <br />
+                                        Now, for the moment you've been wai=
+ting
+                                        for: winners will be announced on
+                                        Tuesday, 26th September, 2023 on ou=
+r
+                                        <span
+                                          ><a
+                                            href=3D"https://t.me/+qszaET6K9=
+F4yZGU0"
+                                            >Telegram Community</a
+                                          ></span
+                                        >
+                                        and
+                                        <span
+                                          ><a
+                                            href=3D"https://twitter.com/get=
+Linkedai"
+                                            >Twitter</a
+                                          ></span
+                                        >. =F0=9F=8E=89
+                                        <br />
+                                        <br />
+                                        Here's a sneak peek at the fantasti=
+c
+                                        prizes awaiting the top performers:
+                                        <br />
+                                        <br />
+
+                                        =F0=9F=A5=87 The first winner will =
+go home with
+                                        500,000 NGN!
+                                        <br />
+                                        <br />
+                                        =F0=9F=A5=88 The second-place winne=
+r will receive
+                                        a laptop to further explore the wor=
+ld of
+                                        coding and technology.
+                                        <br />
+                                        <br />
+                                        We believe in you, and we can't wai=
+t to
+                                        see what incredible project you com=
+e up
+                                        with.
+                                        <br />
+                                        <br />
+                                        Remember, it's not just about the
+                                        destination; it's also about the jo=
+urney
+                                        and the skills you'll gain along th=
+e
+                                        way.
+
+                                        <br />
+                                        <br />If you have any questions or =
+need
+                                        assistance, feel free to reach out.
+                                        We're here to support you every ste=
+p of
+                                        the way.
+                                        <br />
+                                        <br />Thank you for being a part of=
+ this
+                                        coding challenge. Best of luck, and=
+ may
+                                        your coding journey be filled with =
+fun
+                                        and discovery!
+                                        <br />
+                                        <br />
+                                        Warm regards,<br />
+                                        Otimeyin Igbene<br />
+                                        CEO, GetLinked.ai
+                                        <!-- The <a href=3D"https://www.get=
+linked.ai/" style=3D"color:#073D9F;font-family: Raleway; font-weight: 600;t=
+ext-decoration: underline">GetLinked.Ai</a> Team -->
+                                        <br />
+                                        <br /> </span
+                                      ><br /><br />
+                                    </div>
+                                  </td>
+                                </tr>
+                                <br />
+                                <br />
+                              </table>
+                              <!-- <table width=3D"80%" border=3D"0" cellsp=
+acing=3D"0" cellpadding=3D"0">
+
+                              <tr class=3D"">
+
+                                <td class=3D"h1 pb25" style=3D"color:#073D9=
+F; font-family:'Raleway', Arial,sans-serif; font-size:13px; line-height:35p=
+x; text-align:left; padding-bottom:5px;
+                                  border-bottom: 1px solid rgba(153, 163, 1=
+90, 0.2);font-weight: 500;">
+                                <td class=3D"tbrr p30-15">
+                                  <img style=3D"
+                                    display: block;
+                                    height: 100px;
+                                    border: 0;
+                                    width: 651px;
+                                    max-width: 80%;
+                                  " title=3D"Social profile" width=3D"651px=
+"
+                                    src=3D"https://res.cloudinary.com/eddie=
+wurld/image/upload/v1686243194/69297-writing_d2mgno.gif" />
+                                </td>
+                          </td>
+                        </tr>
+                      </table> -->
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <!-- END Intro -->
+
+                <!-- SUb INTRO -->
+                <!-- <div mc:repeatable=3D"Select" mc:variant=3D"Intro">
+          <table width=3D"90%" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" style=3D"margin-left: 40px; margin-top: 10px;">
+            <tr>
+              <td style=3D"padding-bottom: 10px;">
+                <table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpa=
+dding=3D"0">
+                  <tr>
+                    <td class=3D"tbrr p30-15"
+                      style=3D"padding: 30px 30px 20px 30px; border-radius:=
+0px 0px 0px 0px; margin-top: -20px;"
+                      bgcolor=3D"#ffffff">
+                      <table width=3D"100%" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0">
+
+                        <tr>
+                          <td class=3D"text-center pb25"
+                            style=3D"color:#0934F6; font-family:'Nunito', A=
+rial,sans-serif; font-size:14px; line-height:25px; text-align:left; padding=
+-bottom:25px;">
+                            <div mc:edit=3D"text_3">
+                              Have any questions? Please reach out to our s=
+upport team at support@libertypay
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class=3D"img" width=3D"55" style=3D"font-size=
+:0pt; line-height:0pt; text-align:left;">
+                            <a href=3D"https://play.google.com/store/apps/d=
+etails?id=3Dcom.libertytechx.org.libertpaiy"
+                              style=3D"outline: none" tabindex=3D"-1" targe=
+t=3D"_blank"><img alt=3D"google play"
+                                src=3D"https://res.cloudinary.com/eddiewurl=
+d/image/upload/v1685529909/play-store_csxc6q.png"
+                                style=3D"
+                                      display: block;
+                                      height: auto;
+                                      border: 0;
+                                      width: 217px;
+                                      height: 60px;
+                                   =20
+                                    " title=3D"google play" width=3D"217" /=
+></a>
+                          </td>
+                          <td class=3D"img" width=3D"55" style=3D"font-size=
+:0pt; line-height:0pt; text-align:left;">
+                            <a href=3D"https://apps.apple.com/ng/app/libert=
+y-pay-agency/id1637666052"
+                              style=3D"outline: none" tabindex=3D"-1" targe=
+t=3D"_blank"><img alt=3D"apple store"
+                                src=3D"https://res.cloudinary.com/eddiewurl=
+d/image/upload/v1685529909/app-store_xveogi.png"
+                                style=3D"
+                                      display: block;
+                                      height: auto;
+                                      border: 0;
+                                      width: 217px;
+                                      height: 60px;
+                                =20
+                                    " title=3D"apple store" width=3D"217" /=
+></a>
+                          </td>
+
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </div> -->
+                <!-- END Intro -->
+
+                <!-- Footer -->
+                <!-- <table width=3D"100%" border=3D"0" cellspacing=3D"0" c=
+ellpadding=3D"0">
+                <tr>
+                  <td class=3D"p30-15 bbrr"
+                    style=3D"padding: 50px 30px; border-radius:0px 0px 26px=
+ 26px; background: #ffffff80;">
+                    <table width=3D"100%" border=3D"0" cellspacing=3D"0" ce=
+llpadding=3D"0">
+                      <tr>
+                      <tr>
+                        <td class=3D"text-footer1 pb10"
+                          style=3D"color:#4C1961; font-family:'Nunito', Ari=
+al,sans-serif; font-size:20px; line-height:20px; text-align:center; padding=
+-bottom:30px;">
+                          <div mc:edit=3D"text_36">Follow Us:
+                          </div>
+                        </td>
+                      </tr>
+                      <td align=3D"center" style=3D"padding-bottom: 30px;">
+
+                        <table border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0">
+                          <tr>
+                            <td class=3D"img" width=3D"55" style=3D"font-si=
+ze:0pt; line-height:0pt; text-align:left;">
+                              <a href=3D"#" target=3D"_blank"><img
+                                  src=3D"https://res.cloudinary.com/eddiewu=
+rld/image/upload/v1650370220/Group_344_aaedtf.png"
+                                  width=3D"38" height=3D"38" mc:edit=3D"ima=
+ge_14" style=3D"max-width:38px;" border=3D"0"
+                                  alt=3D"" /></a>
+                            </td>
+                            <td class=3D"img" width=3D"55" style=3D"font-si=
+ze:0pt; line-height:0pt; text-align:left;">
+                              <a href=3D"#" target=3D"_blank"><img
+                                  src=3D"https://res.cloudinary.com/eddiewu=
+rld/image/upload/v1650370220/Group_342_gxzkt9.png"
+                                  width=3D"38" height=3D"38" mc:edit=3D"ima=
+ge_15" style=3D"max-width:38px;" border=3D"0"
+                                  alt=3D"" /></a>
+                            </td>
+                            <td class=3D"img" width=3D"55" style=3D"font-si=
+ze:0pt; line-height:0pt; text-align:left;">
+                              <a href=3D"#" target=3D"_blank"><img
+                                  src=3D"https://res.cloudinary.com/eddiewu=
+rld/image/upload/v1650370220/Group_343_llysyo.png"
+                                  width=3D"38" height=3D"38" mc:edit=3D"ima=
+ge_16" style=3D"max-width:38px;" border=3D"0"
+                                  alt=3D"" /></a>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                </tr>
+
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td class=3D"img" style=3D"font-size:0pt; line-height:0pt; text=
+-align:left;">
+              <div mc:edit=3D"text_39">
+                <!--[if !mso]><!-->
+                |LIST:DESCRIPTION| |LIST:ADDRESS| |REWARDS_TEXT|
+                <!--<![endif]-->
+                <!-- </div>
+            </td>
+          </tr>
+        </table> -->
+                -->
+                <!-- END Footer -->
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

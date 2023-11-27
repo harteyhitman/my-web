@@ -90,7 +90,7 @@ export const projects = [
 
 
 export const smallProject = [
-
+    
     {
         smallProjectLink: 'https://country-flags-names.vercel.app/',
         id: '2',
