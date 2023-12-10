@@ -14,7 +14,7 @@ import CountDown from '../images/count-down.png'
 import AppleStore from '../images/Apple store.png'
 import GalleryPhotos from '../images/GalleryPhotos.png'
 import Html5 from '../images/html5.png'
-
+import BankApp from '../images/bank-app.png'
 export const ToolsData = [
    {
         'id': '5',
@@ -84,6 +84,13 @@ export const projects = [
         projectsTools: 'Html, Css, ReactJS',
         realProjects: MusicDemo,
         gotoProjects:'https://music-demo-app.vercel.app/'
+    },
+ 
+    {
+        'id': '4',
+        projectsTools: 'Html, Css, ReactJS',
+        realProjects: BankApp,
+        gotoProjects:'https://bank-app-indol-one.vercel.app/'
     },
  
 ]
