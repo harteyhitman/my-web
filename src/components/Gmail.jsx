@@ -6,7 +6,7 @@ import React from 'react'
 const Gmail = () => {
   return (
     <div className='gmail'>
-        <h2><a href="Oyegoke.a18@gmail.com">Oyegoke.a18@gmail.com</a></h2>
+        <h2><a href="mailto:oyegoke.a18@gmail.com">oyegoke.a18@gmail.com</a></h2>
         <div id='footer'>
           
           <div className='contact'>
